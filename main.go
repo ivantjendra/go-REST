@@ -15,7 +15,7 @@ func main() {
 
 	r.GET("/orders", controllers.Read)
 	r.POST("/orders", controllers.Create)
-	r.PUT("/orders/:id", controllers.Update)
+	r.PUT("/orders", controllers.Update)
 	r.DELETE("/orders/:id", controllers.Delete)
 
 	port := "3000"
