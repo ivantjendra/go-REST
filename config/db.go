@@ -1,6 +1,7 @@
 package config
 
 import (
+	"assignment2/models"
 	"fmt"
 
 	"gorm.io/driver/mysql"
@@ -24,7 +25,7 @@ func InitDB() {
 		fmt.Println("Error when connect")
 	}
 
-	db.AutoMigrate(&Order{}, &Item{})
+	db.AutoMigrate(&models.Order{}, &models.Item{})
 }
 
 func GetDB() *gorm.DB {

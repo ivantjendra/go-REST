@@ -18,6 +18,6 @@ func main() {
 	r.PUT("/orders/:id", controllers.Update)
 	r.DELETE("/orders/:id", controllers.Delete)
 
-	port := 3000
+	port := "3000"
 	r.Run(":" + port)
 }
